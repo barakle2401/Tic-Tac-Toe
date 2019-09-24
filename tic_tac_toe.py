@@ -1,3 +1,12 @@
+""""
+Tic Tac Toe in python
+Author: Barak Levy
+
+""""
+
+
+
+
 from tkinter import *
 from tkinter import messagebox
 tk = Tk()
@@ -7,6 +16,7 @@ flag_turn = True
 p1 = StringVar()
 p2 = StringVar()
 
+# disabled all buttons in case one of the player won the game
 def disableButton():
     button1.configure(state=DISABLED)
     button2.configure(state=DISABLED)
@@ -18,6 +28,7 @@ def disableButton():
     button8.configure(state=DISABLED)
     button9.configure(state=DISABLED) 
 
+# mark down the clicked square with the right X or O and change the turn flag
 def btnClicked(button):
     global flag_turn
 
